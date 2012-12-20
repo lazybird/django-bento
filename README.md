@@ -47,9 +47,9 @@ your ``INSTALLED_APPS`` setting.
 
 * Add a URL entry in your projects ``urls.py``.
 
-    urlpatterns = patterns('',
-        (r'^boxes/', include('bento.urls')),
-    )
+        urlpatterns = patterns('',
+            (r'^boxes/', include('bento.urls')),
+        )
 
 * Update the database by running ``syncdb``.
 
