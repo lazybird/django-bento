@@ -1,0 +1,16 @@
+{% load url from future %}
+{% load i18n %}
+
+<div{% if perms.bento %} class="text-box"{% endif %}>
+
+{% if box.text %}
+    {{ box.text }}
+{% else %}
+    {% include 'bento/initial-text.html' %}
+{% endif %}
+
+{% if perms.bento %}
+    <a href="{% if box %}{% url 'bento-text-edit' box.name %}{% else %}{% url 'bento-text-edit' name %}{% endif %}" class="text-box-edit" target="_blank">{% trans "Edit" %}</a>
+{% endif %}
+
+</div>

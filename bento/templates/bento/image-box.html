@@ -1,0 +1,24 @@
+{% load url from future %}
+{% load i18n %}
+
+<div{% if perms.bento %} class="image-box"{% endif %}>
+
+{% if box.image %}
+    {% block image %}
+        {% if box.link %}
+             <a href="{{ box.link }}">
+        {% endif %}
+        <img src="{{ box.image.url }}" alt="{{ box.alternate_text }}" />
+        {% if box.link %}
+             </a>
+        {% endif %}
+    {% endblock %}
+{% else %}
+        <span style="font-size:64px">&#9888;</span>
+{% endif %}
+
+{% if perms.bento %}
+    <p class="{% if box.image %}image-box-edit{% else %}default-image-edit{% endif %}"><a href="{% if box %}{% url 'bento-image-edit' box.name %}{% else %}{% url 'bento-image-edit' name %}{% endif %}" target="_blank">{% trans "Change picture" %}</a></p>
+{% endif %}
+
+</div>
