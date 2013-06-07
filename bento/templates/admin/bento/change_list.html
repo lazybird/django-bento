@@ -20,22 +20,18 @@
 {% endblock %}
 
 {% block object-tools %}
-<form id="json_upload_form" method="POST" action="{% if cl.opts.module_name == 'textbox' %}{% url 'bento-text-import' %}{% endif %}{% if cl.opts.module_name == 'imagebox' %}{% url 'bento-image-import' %}{% endif %}" enctype="multipart/form-data" style="visibility:hidden">
+    <form id="json_upload_form" method="POST" action="{% if cl.opts.module_name == 'textbox' %}{% url 'bento-text-import' %}{% endif %}{% if cl.opts.module_name == 'imagebox' %}{% url 'bento-image-import' %}{% endif %}" enctype="multipart/form-data" style="visibility:hidden">
     {% csrf_token %}
     <input id="json_upload_file" type="file" name="json_file" />
   </form>
-  {% if has_add_permission %}
-    <ul class="object-tools">
-      <li>
+  {{ block.super }}
+{% endblock object-tools %}
+
+{% block object-tools-items %}
+    <li>
         <a href="" id="json_upload_button" class="addlink">
-          {% blocktrans with cl.opts.verbose_name_plural as name %}JSON Import {{ name }}{% endblocktrans %}
+        {% blocktrans with cl.opts.verbose_name_plural as name %}JSON Import {{ name }}{% endblocktrans %}
         </a>
-      </li>
-      <li>
-        <a href="add/{% if is_popup %}?_popup=1{% endif %}" class="addlink">
-          {% blocktrans with cl.opts.verbose_name as name %}Add {{ name }}{% endblocktrans %}
-        </a>
-      </li>
-    </ul>
-  {% endif %}
+    </li>
+    {{ block.super }}
 {% endblock %}
