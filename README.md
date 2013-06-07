@@ -2,18 +2,19 @@
 Django Bento
 ============
 
-     __________________
-    /\  ______________ \
-    ::\ \ZZZZZZZZZZZZ/\ \
-     \.\ \  ________ \:\ \     django-bento helps you adding editable
-      \:\ \ \   \   \ \:\ \    text and image content areas on
-       \:\ \ \   \   \ \:\ \   your site. These content boxes are
-        \:\ \ \___\___\ \:\ \  easy to define in templates and are
-         \:\ \ \   \   \ \:\ \ updated from Django admin.
-          \:\ \ \   \   \ \:\ \
-           \:\ \ \___\___\ \;\ \
-            \:\_________________\
-             :/ZZZZZZZZZZZZZZZZZ/
+     _                       _
+    | |ZZZZZZZZZZZZZZZZZZZZZ| |
+    |:|  +------+ +------+  |:|
+    |:|  |      | |      |  |:|
+    |:|  |      | |      |  |:| django-bento helps you adding editable
+    |:|  |      | |      |  |:| text and image content areas on
+    |:|  +------+ +------+  |:| your site. These content boxes are
+    |:|  |      | |      |  |:| easy to define in templates and are
+    |:|  |      | |      |  |:| updated from Django admin.
+    |:|  |      | |      |  |:|
+    |:|  +------+ +------+  |:|
+    |_|ZZZZZZZZZZZZZZZZZZZZZ|_|
+
 
 
 In templates:
