@@ -27,7 +27,7 @@ class BentoTestHelper(object):
         User.objects.create_superuser(
             username='admin',
             password='admin',
-            email='email@trapeze.com'
+            email='email@test.com'
         )
         self.client.login(username='admin', password='admin')
 
