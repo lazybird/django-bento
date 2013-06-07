@@ -2,8 +2,7 @@
 Django Bento
 ============
 
-     _                       _
-    | |ZZZZZZZZZZZZZZZZZZZZZ| |
+    |ZZZZZZZZZZZZZZZZZZZZZZZZZ|
     |:|  +------+ +------+  |:|
     |:|  |      | |      |  |:|
     |:|  |      | |      |  |:| django-bento helps you adding editable
@@ -13,7 +12,7 @@ Django Bento
     |:|  |      | |      |  |:| updated from Django admin.
     |:|  |      | |      |  |:|
     |:|  +------+ +------+  |:|
-    |_|ZZZZZZZZZZZZZZZZZZZZZ|_|
+    |ZZZZZZZZZZZZZZZZZZZZZZZZZ|
 
 
 
