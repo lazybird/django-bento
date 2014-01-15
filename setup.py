@@ -12,5 +12,6 @@ setup(
     author='lazybird',
     long_description=open('README.md').read(),
     include_package_data=True,
+    license='Creative Commons Attribution 3.0 Unported',
 )
 
